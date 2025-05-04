@@ -1,7 +1,7 @@
 import { createStore } from 'redux';
 
 function numberReducer(incomingObj, action) {
-    console.log(action)
+    // console.log(action)
     if(action.type === 'ADD'){
         const numberToAdd = action.payload;
 
@@ -44,6 +44,5 @@ console.log(store.getState())
 
 
 
-store.dispatch({type: 'ADD', payload: 17});  // dispatch takes an action Object as an argument
+store.dispatch({type: 'ADD', payload: 17});  // dispatch takes an action - Object as an argument
 console.log(store.getState())                // { number: 17 }
-
